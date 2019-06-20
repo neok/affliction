@@ -255,4 +255,256 @@ th {
 
 body {
     padding: 0;
+    color: white;
+    font-family: Avenir,Tahoma,sans-serif;
+}
+
+h2 {
+    margin-top: 45px;
+    margin-bottom: 2px;
+    padding-bottom: 0;
+    float: none;
+    font-size: 20.5px;
+    line-height: 31px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: .26px;
+}
+h4, h5, h6 , p {
+    font-size: 17px;
+    letter-spacing: .25px;
+    clear: both;
+}
+
+/*utility*/
+
+.is-dark {
+    background: #27212c;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-align-stretch {
+    align-items: stretch;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.italic {
+    ;
+}
+
+/*main block*/
+
+.affliction-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.affliction-hero-logo {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 5rem 1.5rem;
+}
+
+.affliction-main-hero {
+    min-height: 100vh;
+}
+
+.affliction-hero-body {
+    display: flex;
+    align-items: center;
+}
+
+.affliction-container {
+    margin: 0 auto;
+    position: relative;
+}
+
+.affliction-container-min {
+    position: relative;
+}
+
+.affliction-has-text-centered {
+    text-align: center;
+}
+
+.affliction-hero-description {
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.affliction-hero-logo img {
+    margin-bottom: 10px;
+}
+
+/*main page articles*/
+.affliction-image-article {
+    position: relative;
+}
+.affliction-image-article a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white !important;
+    z-index: 6;
+}
+
+.dark-bckg {
+    background-color: rgba(25,25,25,0.74);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+.affliction-image-article:hover .dark-bckg {
+    background-color: rgba(25,25,25,0.25);
+}
+
+/*.affliction-image-article a:hover {*/
+/*    opacity: 0.6;*/
+/*}*/
+.affliction-image-article .affliction-hero-body {
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+}
+
+.affliction-hero-body h2 {
+    text-align: justify;
+    text-indent: 2em;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 769px) {
+    .affliction-col {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .affliction-col {
+        flex: none !important;
+        width: 60%;
+    }
+}
+
+.affliction-image-article h1 {
+    margin-bottom: 20px;
+    font-size: 58px;
+    line-height: 56px;
+    font-weight: 600;
+    letter-spacing: -1.1px;
+    text-decoration: none;
+}
+
+
+/*scroll down animation*/
+
+.affliction-chevron-container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 25%;
+}
+
+.affliction-chevron {
+    cursor: pointer;
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+}
+
+.affliction-chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
+
+.affliction-chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
+
+.affliction-chevron:before,
+.affliction-chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+}
+
+.affliction-chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
+
+.affliction-chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+    25% {
+        opacity: 1;
+
+    }
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    67% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}
+
+.text {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+    to {
+        opacity: 1;
+    }
+}
+
+/*columns*/
+
+.affliction-cols {
+    display: flex;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: -1rem;
+}
+
+
+.affliction-col {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 2.5rem;
 }
