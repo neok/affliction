@@ -1,2 +1,2 @@
-###Affliction Ghost theme
+#Affliction Ghost theme
 
