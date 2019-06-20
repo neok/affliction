@@ -7,13 +7,15 @@ into the {body} of the default.hbs template --}}
 
 <section class="affliction-hero flex-align-center is-dark affliction-main-hero"
          style="background-image: url({{ @site.cover_image}}); background-size: cover;">
+    <div class="dark-bckg bgnew"></div>
     <div class="affliction-hero-body">
         <div class="affliction-hero-logo">
+
             <div class="affliction-container affliction-centered affliction-has-text-centered">
                 {{#if @site.logo}}
 
                     <img class="site-logo"
-                         srcset="{{img_url  @site.logo size="s"}} 300w,
+                         srcset="{{img_url  @site.logo size="m"}} 300w,
                                 {{img_url @site.logo size="s"}} 600w,
                                 {{img_url @site.logo size="m"}} 1000w,
                                 {{img_url @site.logo size="m"}} 2000w"

@@ -88,6 +88,7 @@ video {
 }
 body {
     line-height: 1;
+    overflow-x: hidden;
 }
 ol,
 ul {
@@ -300,6 +301,10 @@ h4, h5, h6 , p {
 
 /*main block*/
 
+.home-template .pagination {
+    display: none;
+}
+
 .affliction-hero {
     display: flex;
     flex-direction: column;
@@ -321,6 +326,7 @@ h4, h5, h6 , p {
 .affliction-hero-body {
     display: flex;
     align-items: center;
+    z-index: 10;
 }
 
 .affliction-container {
@@ -356,6 +362,17 @@ h4, h5, h6 , p {
     z-index: 6;
 }
 
+.bgnew {
+    background-image: linear-gradient(to right bottom, #000000, #542a94, #9e2b9f, #1e154c, #071035);
+    position: absolute;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
 .dark-bckg {
     background-color: rgba(25,25,25,0.74);
     position: absolute;
@@ -375,6 +392,7 @@ h4, h5, h6 , p {
 .affliction-image-article .affliction-hero-body {
     padding-bottom: 10rem;
     padding-top: 10rem;
+    z-index: 10;
 }
 
 .affliction-hero-body h2 {
@@ -409,10 +427,11 @@ h4, h5, h6 , p {
 /*scroll down animation*/
 
 .affliction-chevron-container {
-    position: relative;
+    position: absolute;
     width: 24px;
     height: 24px;
-    margin-bottom: 25%;
+    bottom: 21%;
+    z-index: 10;
 }
 
 .affliction-chevron {
