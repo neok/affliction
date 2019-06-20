@@ -12,6 +12,12 @@
   },
   "author": "petro.popelyshko@gmail.com",
   "license": "MIT",
+  "keywords": [
+    "ghost",
+    "theme",
+    "ghost-theme",
+    "affliction-ghost theme"
+  ],
   "config": {
     "posts_per_page": 2,
     "image_sizes": {
