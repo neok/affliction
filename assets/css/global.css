@@ -527,3 +527,50 @@ h4, h5, h6 , p {
     flex-shrink: 1;
     padding: 2.5rem;
 }
+
+.site-nav {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    width: 250px;
+    z-index: 12;
+    left: unset;
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.site-nav li {
+
+}
+.site-nav li a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.site-nav li a:hover {
+    color: #9e2b9f;
+    background: white;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 769px) {
+    .site-nav li a {
+        font-size: 22px;
+    }
+
+    .site-nav {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+}

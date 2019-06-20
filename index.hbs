@@ -2,8 +2,9 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-
-
+<header>
+    {{> "site-nav"}}
+</header>
 
 <section class="affliction-hero flex-align-center is-dark affliction-main-hero"
          style="background-image: url({{ @site.cover_image}}); background-size: cover;">
@@ -13,7 +14,7 @@ into the {body} of the default.hbs template --}}
 
             <div class="affliction-container affliction-centered affliction-has-text-centered">
                 {{#if @site.logo}}
-
+                    <h1>{{@site.title}}</h1>
                     <img class="site-logo"
                          srcset="{{img_url  @site.logo size="m"}} 300w,
                                 {{img_url @site.logo size="s"}} 600w,
@@ -23,6 +24,8 @@ into the {body} of the default.hbs template --}}
                          src="{{img_url @site.logo size="l"}}"
                          alt="{{@site.title}}"
                     />
+
+
                 {{else}}
                     {{@site.title}}
                 {{/if}}
