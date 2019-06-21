@@ -1,0 +1,20 @@
+<div class="affliction-post-card-hero flex-align-center is-dark"
+         style="background-image: url({{ feature_image}}); background-size: cover;">
+    <div class="dark-bckg"></div>
+    <a href="{{url}}">
+        <div class="affliction-hero-body">
+            <div class="affliction-container">
+                <div class="affliction-cols">
+                    <div class="affliction-col affliction-card text-center">
+                        <h1>{{title}}</h1>
+                        <small>
+                            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date
+                                    format="DD MMMM YYYY"}}</time>
+                        </small>
+                        <h2 class="affliction-subtitle">{{excerpt words="12"}} ...</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
