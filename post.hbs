@@ -1,0 +1,39 @@
+{{!< default}}
+
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+<header class="affliction-top-header-sticky">
+    {{> "site-nav"}}
+</header>
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+
+    <section class="affliction-hero affliction-post-hero flex-align-center is-dark affliction-main-hero"
+             style="background-image: url({{ feature_image}}); background-size: cover;">
+    </section>
+
+    <main role="main" class="affliction-post-item">
+
+        <article class="affliction-post-article">
+            <div class="affliction-post-date">
+                <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+            </div>
+            <h1>{{ title }}</h1>
+            <div class="affliction-post-tags">
+                {{#foreach tags }}
+                    <a href="{{url}}">{{name}}</a>
+                {{else}}
+                    <p>There were no tags...</p>
+                {{/foreach}}
+            </div>
+            <div class="affliction-main-article">
+                {{content}}
+            </div>
+        </article>
+
+    </main>
+
+{{/post}}

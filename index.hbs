@@ -14,20 +14,20 @@ into the {body} of the default.hbs template --}}
 
             <div class="affliction-container affliction-centered affliction-has-text-centered">
                 {{#if @site.logo}}
-                    <h1>{{@site.title}}</h1>
+                    <h1 class="affliction-main-h1">{{@site.title}}</h1>
                     <img class="site-logo"
                          srcset="{{img_url  @site.logo size="m"}} 300w,
                                 {{img_url @site.logo size="s"}} 600w,
                                 {{img_url @site.logo size="m"}} 1000w,
                                 {{img_url @site.logo size="m"}} 2000w"
-                         sizes="(max-width: 1000px)"
-                         src="{{img_url @site.logo size="l"}}"
+                         sizes="(max-width: 400px)"
+                         src="{{img_url @site.logo size="m"}}"
                          alt="{{@site.title}}"
                     />
 
 
                 {{else}}
-                    {{@site.title}}
+                    <h1 class="affliction-main-h1">{{@site.title}}</h1>
                 {{/if}}
             </div>
             <div class="affliction-hero-description affliction-has-text-centered">
