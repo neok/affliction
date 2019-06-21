@@ -1,3 +1,5 @@
-#Affliction Ghost theme
-Beta(work in progress)
+#Affliction Ghost theme (beta)
+
+
+
 ![](https://media.giphy.com/media/j6ZkUYpYWtJPsRLTaD/giphy.gif)
