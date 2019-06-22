@@ -528,7 +528,7 @@ h1.affliction-main-h1 {
     position: absolute;
     right: 25px;
     top: 10px;
-    width: 250px;
+    /*width: 250px;*/
     z-index: 12;
     left: unset;
     margin-left: unset;
@@ -603,6 +603,7 @@ h1.affliction-main-h1 {
     font-size: 66px;
     font-weight: bold;
     letter-spacing: 2px;
+    line-height: 66px;
 }
 
 .affliction-post-article .affliction-post-tags a {
