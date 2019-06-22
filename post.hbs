@@ -10,10 +10,11 @@ into the {body} of the default.hbs template --}}
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
-
-    <section class="affliction-hero affliction-post-hero flex-align-center is-dark affliction-main-hero"
-             style="background-image: url({{ feature_image}}); background-size: cover;">
-    </section>
+    {{#if feature_image}}
+        <section class="affliction-hero affliction-post-hero flex-align-center is-dark affliction-main-hero"
+                 style="background-image: url({{ feature_image}}); background-size: cover;">
+        </section>
+    {{/if}}
 
     <main role="main" class="affliction-post-item">
 
