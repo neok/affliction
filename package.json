@@ -10,7 +10,12 @@
     "ghost": ">=2.0.0",
     "ghost-api": "v2"
   },
-  "author": "petro.popelyshko@gmail.com",
+  "author": {
+    "name": "Petro Popelyshko",
+    "email": "peter@antistartup.io",
+    "url": "https://antistartup.io"
+  },
+
   "license": "MIT",
   "keywords": [
     "ghost",
