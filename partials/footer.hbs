@@ -5,9 +5,9 @@
         <div class="site-nav-left">
             <nav class="site-footer-nav">
                 {{#if @site.facebook}}
-                    <a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>{{/if}}
+                    <a class="social" href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>{{/if}}
                 {{#if @site.twitter}}
-                    <a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>{{/if}}
+                    <a class="social" href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>{{/if}}
             </nav>
         </div>
     </div>

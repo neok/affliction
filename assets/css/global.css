@@ -403,8 +403,8 @@ h1.affliction-main-h1 {
 }
 
 .affliction-hero-body h2 {
-    text-align: justify;
-    text-indent: 2em;
+    text-align: unset;
+    /*text-indent: 2em;*/
     margin-top: 10px;
 }
 
@@ -638,7 +638,7 @@ h1.affliction-main-h1 {
     margin-bottom: 25px;
     letter-spacing: .02rem !important;
     line-height: 1.6em;
-    text-indent: 24px;
+    /*text-indent: 24px;*/
 }
 
 .affliction-main-article a {
@@ -802,6 +802,11 @@ h1.affliction-main-h1 {
     margin-right: 5px;
 }
 
+.affliction-footer a.social {
+    width: 50px;
+    height: 50px;
+}
+
 .affliction-footer a svg {
     width: 50px;
     background: white;
@@ -811,6 +816,11 @@ h1.affliction-main-h1 {
 .affliction-footer a svg:hover {
     background: #16a2f9;
 }
+
+.affliction-footer .site-nav-left, .site-footer-nav {
+    height: 50px;
+}
+
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 769px) {
@@ -844,7 +854,9 @@ h1.affliction-main-h1 {
     }
 
     .affliction-hero-logo {
-        padding: 14rem 2.5rem;
+        /*padding: 14rem 15px;*/
+        padding: 0;
+        margin: 14rem 0;
     }
 
     h1.affliction-main-h1 {
@@ -871,7 +883,17 @@ h1.affliction-main-h1 {
         width: 100%;
         padding: 0 38px;
     }
+    /*.affliction-col {*/
+    /*    margin: 0;*/
+    /*    padding: 0;*/
+    /*}*/
 
+    .affliction-cols {
+        display: flex;
+        margin-left: unset;
+        margin-right: unset;
+        margin-top: unset;
+    }
 }
 
 
