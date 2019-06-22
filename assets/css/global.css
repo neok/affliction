@@ -310,6 +310,7 @@ h4, h5, h6 , p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 
 }
 
@@ -904,6 +905,12 @@ h1.affliction-main-h1 {
 
     .affliction-post-hero {
         min-height: 40vh;
+    }
+
+    .affliction-hero-description {
+        padding: 0 14px;
+        font-size: 22px;
+        line-height: 33px;
     }
 }
 
