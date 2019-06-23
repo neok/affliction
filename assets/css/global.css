@@ -620,12 +620,16 @@ h1.affliction-main-h1 {
 .affliction-post-article .affliction-post-tags a:hover {
     color: #16a2f9;
     text-decoration: none;
-}
+}   
 
 .affliction-post-article .affliction-post-tags p {
     font-size: 14px;
     color: gray;
 
+}
+
+.affliction-footer span.theme-by a {
+    color: #16a2f9;
 }
 
 
@@ -911,6 +915,10 @@ h1.affliction-main-h1 {
         padding: 0 14px;
         font-size: 22px;
         line-height: 33px;
+    }
+
+    .affliction-footer span.theme-by {
+        display: none;
     }
 }
 
