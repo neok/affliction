@@ -4,7 +4,7 @@ A content focused responsive theme for [Ghost](https://github.com/tryghost/ghost
 
 ## Demo
 
-* [Theme](https://antistartup.io/)
+* [Theme](https://affliction.antistartup.io)
 
 ## Features
 
