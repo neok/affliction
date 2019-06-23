@@ -12,9 +12,16 @@ A content focused responsive theme for [Ghost](https://github.com/tryghost/ghost
 
 ## Previews
 
-* ![](https://media.giphy.com/media/j6ZkUYpYWtJPsRLTaD/giphy.gif)
 
-* ![](https://media.giphy.com/media/lp6yyttODJfQYmVJKk/giphy.gif)
+<table>
+<tr>
+<img src="https://media.giphy.com/media/j6ZkUYpYWtJPsRLTaD/giphy.gif" />
+</td>
+<td valign="top">
+<img src="https://media.giphy.com/media/lp6yyttODJfQYmVJKk/giphy.gif" />
+</td>
+</tr>
+</table>
 
 ## License
 
